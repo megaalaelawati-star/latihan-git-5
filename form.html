@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran</h2>
+    <form action="#" method="post">
+        <!-- Nama -->
+        <label for="nama">Nama Lengkap :</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <!-- Nomor HP -->
+        <label for="nohp">No HP :</label><br>
+        <input type="text" id="nohp" name="nohp" required><br><br>
+
+        <!-- Jenis Kelamin -->
+        <label>Jenis Kelamin :</label><br>
+        <input type="radio" id="pria" name="jk" value="Pria">
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="jk" value="Wanita">
+        <label for="wanita">Wanita</label><br><br>
+
+        <!-- Hobi -->
+        <label>Hobi :</label><br>
+        <input type="checkbox" id="mancing" name="hobi" value="Mancing">
+        <label for="mancing">Mancing</label><br>
+        <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br>
+        <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+        <label for="membaca">Membaca</label><br><br>
+
+        <!-- Pendidikan Terakhir -->
+        <label for="pendidikan">Pendidikan Terakhir :</label><br>
+        <select id="pendidikan" name="pendidikan">
+            <option value="sma">SMA/SMK</option>
+            <option value="d3">D3</option>
+            <option value="s1">S1</option>
+            <option value="s2">S2</option>
+        </select><br><br>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+
+</html>
