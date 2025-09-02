@@ -1,157 +1,161 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Sederhana</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #74b9ff, #a29bfe);
-      margin: 0;
-      padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sederhana</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            margin: 0;
+            padding: 20px;
+        }
 
-    /* Styling heading */
-    .headings {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+        /* Styling heading */
+        .headings {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    .headings h1 {
-      margin: 8px 0;
-      padding: 8px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
+        .headings h1 {
+            margin: 8px 0;
+            padding: 8px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
 
-    .headings h1:hover {
-      transform: scale(1.05);
-      background: #ffeaa7;
-    }
+        .headings h1:hover {
+            transform: scale(1.05);
+            background: #ffeaa7;
+        }
 
-    /* Kartu profil */
-    .profile-card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      max-width: 550px;
-      margin: 0 auto;
-      transition: transform 0.2s ease;
-      text-align: center;
-    }
+        /* Kartu profil */
+        .profile-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            max-width: 550px;
+            margin: 0 auto;
+            transition: transform 0.2s ease;
+            text-align: center;
+        }
 
-    .profile-card:hover {
-      transform: translateY(-5px);
-    }
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
 
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #2d3436;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #74b9ff;
-      padding-bottom: 10px;
-    }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #74b9ff;
+            padding-bottom: 10px;
+        }
 
-    /* Foto profil */
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 3px solid #74b9ff;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    }
+        /* Foto profil */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #74b9ff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
 
-    .biodata {
-      display: grid;
-      grid-template-columns: 140px auto;
-      row-gap: 12px;
-      column-gap: 10px;
-      font-size: 16px;
-      color: #2d3436;
-      text-align: left;
-    }
+        .biodata {
+            display: grid;
+            grid-template-columns: 140px auto;
+            row-gap: 12px;
+            column-gap: 10px;
+            font-size: 16px;
+            color: #2d3436;
+            text-align: left;
+        }
 
-    .label {
-      font-weight: bold;
-      color: #636e72;
-    }
+        .label {
+            font-weight: bold;
+            color: #636e72;
+        }
 
-    .value {
-      background: #f1f2f6;
-      padding: 6px 10px;
-      border-radius: 8px;
-    }
+        .value {
+            background: #f1f2f6;
+            padding: 6px 10px;
+            border-radius: 8px;
+        }
 
-    /* Tombol kembali */
-    .btn-back {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #74b9ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
+        /* Tombol kembali */
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #74b9ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
 
-    .btn-back:hover {
-      background: #0984e3;
-      transform: scale(1.05);
-    }
-  </style>
+        .btn-back:hover {
+            background: #0984e3;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="headings">
-    <h1 style="color:red;">Hello Bro !</h1>
-    <h1>This is heading 1</h1>
-    <h1>This is heading 2</h1>
-    <h1>This is heading 3</h1>
-    <h1>This is heading 4</h1>
-    <h1>This is heading 5</h1>
-    <h1>This is heading 6</h1>
-  </div>
-
-  <div class="profile-card">
-    <div class="title">Profil Saya</div>
-
-    <!-- Foto lebih kecil -->
-    <img src="foto/Foto.jpg" alt="Foto Profil" class="profile-pic">
-
-    <div class="biodata">
-      <div class="label">Nama</div>
-      <div class="value">Mega Laelawati</div>
-
-      <div class="label">TTL</div>
-      <div class="value">Bandung, 22 Juli 2001</div>
-
-      <div class="label">Alamat</div>
-      <div class="value">Kp. Ciburial No. 46 RT 002 RW 003 Desa Cibogo, Kec. Lembang, Kab. Bandung Barat, Jawa Barat 40391</div>
-
-      <div class="label">Email</div>
-      <div class="value">megaalaelawati@gmail.com</div>
-
-      <div class="label">Telepon</div>
-      <div class="value">+6283821612483</div>
-
-      <div class="label">Pendidikan</div>
-      <div class="value">S1 Teknik Informatika - Universitas Komputer Indonesia</div>
-
-      <div class="label">Hobi</div>
-      <div class="value">Volunteering</div>
+    <div class="headings">
+        <h1 style="color:red;">Hello Bro !</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 2</h1>
+        <h1>This is heading 3</h1>
+        <h1>This is heading 4</h1>
+        <h1>This is heading 5</h1>
+        <h1>This is heading 6</h1>
     </div>
 
-    <!-- Tombol kembali -->
-    <a href="index.html" class="btn-back">⬅ Kembali ke Index</a>
-  </div>
+    <div class="profile-card">
+        <div class="title">Profil Saya</div>
+
+        <!-- Foto lebih kecil -->
+        <img src="foto/Foto.jpg" alt="Foto Profil" class="profile-pic">
+
+        <div class="biodata">
+            <div class="label">Nama</div>
+            <div class="value">Mega Laelawati</div>
+
+            <div class="label">TTL</div>
+            <div class="value">Bandung, 22 Juli 2001</div>
+
+            <div class="label">Alamat</div>
+            <div class="value">Kp. Ciburial No. 46 RT 002 RW 003 Desa Cibogo, Kec. Lembang, Kab. Bandung Barat, Jawa
+                Barat 40391</div>
+
+            <div class="label">Email</div>
+            <div class="value">megaalaelawati@gmail.com</div>
+
+            <div class="label">Telepon</div>
+            <div class="value">+6283821612483</div>
+
+            <div class="label">Pendidikan</div>
+            <div class="value">S1 Teknik Informatika - Universitas Komputer Indonesia</div>
+
+            <div class="label">Hobi</div>
+            <div class="value">Volunteering</div>
+        </div>
+
+        <!-- Tombol kembali -->
+        <a href="index.html" class="btn-back">⬅ Kembali ke Index</a>
+    </div>
 
 </body>
+
 </html>
