@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +12,15 @@
       padding: 20px;
     }
 
-    /* Styling untuk heading */
+    /* Styling heading */
     .headings {
       text-align: center;
       margin-bottom: 30px;
     }
 
     .headings h1 {
-      margin: 10px 0;
-      padding: 10px;
+      margin: 8px 0;
+      padding: 8px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
@@ -32,12 +32,13 @@
       background: #ffeaa7;
     }
 
+    /* Kartu profil */
     .profile-card {
       background: #fff;
       padding: 30px;
       border-radius: 16px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      max-width: 500px;
+      max-width: 550px;
       margin: 0 auto;
       transition: transform 0.2s ease;
       text-align: center;
@@ -48,13 +49,23 @@
     }
 
     .title {
-      text-align: center;
       font-size: 24px;
       font-weight: bold;
       color: #2d3436;
       margin-bottom: 20px;
       border-bottom: 2px solid #74b9ff;
       padding-bottom: 10px;
+    }
+
+    /* Foto profil */
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #74b9ff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
 
     .biodata {
@@ -111,6 +122,10 @@
 
   <div class="profile-card">
     <div class="title">Profil Saya</div>
+
+    <!-- Foto lebih kecil -->
+    <img src="foto/Foto.jpg" alt="Foto Profil" class="profile-pic">
+
     <div class="biodata">
       <div class="label">Nama</div>
       <div class="value">Mega Laelawati</div>
